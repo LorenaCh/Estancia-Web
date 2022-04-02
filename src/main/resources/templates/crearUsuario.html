@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <h1>Crear Usuario</h1>
+        <form th:action="@{/usuario/guardar}" method="post">
+            <label>Id: </label><!-- comment -->
+            <input type="text" name="id"/>
+            <label>Alias: </label><!-- comment -->
+            <input type="text" name="alias"/>
+            <label>Clave: </label><!-- comment -->
+            <input type="text" name="clave"/>
+            <label>Email: </label><!-- comment -->
+            <input type="text" name="email"/>
+            <button type="submit" th:text="aceptar"/>
+        </form>
+    </body>
+</html>
