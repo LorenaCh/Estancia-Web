@@ -27,7 +27,7 @@
                     <td th:text="${usuario.clave}"></td>
                     <td th:text="${usuario.fechaAlta}"></td>
                     <td th:text="${usuario.fechaBaja}"></td>
-                    <td><a th:href="@{/usuario/editar/}+${usuario.id}" th:text="Editar"></a></td>
+                    <td><a th:href="@{/usuario/editar(id=${usuario.id})}" th:text="Editar"></a></td>
                     <td><a th:href="@{/usuario/eliminar(id=${usuario.id})}" th:text="Eliminar"></a></td>
                 </tr>
             </table>

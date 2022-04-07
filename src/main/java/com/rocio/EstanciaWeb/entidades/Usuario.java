@@ -9,7 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import javax.validation.constraints.NotEmpty;
 import net.bytebuddy.dynamic.loading.ClassReloadingStrategy;
 import org.springframework.boot.autoconfigure.web.WebProperties;
 import lombok.Data;
@@ -22,7 +21,6 @@ public class Usuario implements Serializable{
     @Id
     //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
-    @NotEmpty
     private String alias;
     private String email;
     private String clave;
